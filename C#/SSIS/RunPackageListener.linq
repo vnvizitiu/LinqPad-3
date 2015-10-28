@@ -13,7 +13,7 @@
 //C:\Windows\assembly\gac_msil\Microsoft.SqlServer.ManagedDTS\10.0.0.0__89845dcd8080cc91
 //https://msdn.microsoft.com/en-us/library/microsoft.sqlserver.dts.runtime.dtscontainer.execute.aspx
 //https://msdn.microsoft.com/en-us/library/ms403343.aspx
-class MyErrorEventListener : DefaultEvents
+class MyEventListener : DefaultEvents
 {
 	public override bool OnError(DtsObject source, int errorCode, string subComponent,
 	  string description, string helpFile, int helpContext, string idofInterfaceWithError)
@@ -22,58 +22,31 @@ class MyErrorEventListener : DefaultEvents
 		Console.WriteLine("Error in {0}/{1} : {2}", source, subComponent, description);
 		return false;
 	}
-}
-class MyEventListenerInfo : DefaultEvents// https://msdn.microsoft.com/en-us/library/microsoft.sqlserver.dts.runtime.defaultevents.onprogress.aspx
-{
-	public override void OnProgress(TaskHost taskHost,
-	string progressDescription,
-	int percentComplete,
-	int progressCountLow,
-	int progressCountHigh,
-	string subComponent,
-	ref bool fireAgain
-)
+
+	public override void OnProgress(TaskHost taskHost, string progressDescription, int percentComplete, int progressCountLow,
+	int progressCountHigh, string subComponent, ref bool fireAgain)
 	{
 		// Add application-specific diagnostics here.
 		Console.WriteLine("Progress in {0}/{1} : {2}", progressDescription, subComponent, percentComplete);
-		
 	}
-	
-	
 }
- 
 
 class Program
 {
 	static void Main(string[] args)
 	{
-		
-		try
-		{
-			string pkgLocation;
-			Package pkg;
-			Application app;
-			DTSExecResult pkgResults;
-
-			MyErrorEventListener ErroreventListener = new MyErrorEventListener();
-			MyEventListenerInfo InfoEventListener = new MyEventListenerInfo();
-
-			pkgLocation =
-			  @"C:\Users\samtran\Documents\Visual Studio 2008\Projects\Test\Test" +
+		string pkgLocation;
+		Package pkg;
+		Application app;
+		DTSExecResult pkgResults;
+		MyEventListener eventListener = new MyEventListener();
+		pkgLocation =
+		   @"C:\Users\samtran\Documents\Visual Studio 2008\Projects\Test\Test" +
 			  @"\Package.dtsx";
-			app = new Application();
-			//pkg = app.LoadPackage(pkgLocation, ErroreventListener);
-			//pkgResults = pkg.Execute(null, null, ErroreventListener, null, null);
-			pkg = app.LoadPackage(pkgLocation, InfoEventListener);
-			pkgResults = pkg.Execute(null, null, InfoEventListener, null, null);
-
-			Console.WriteLine(pkgResults.ToString());
-		
-		}
-		catch (Exception ex)
-		{
-			Console.WriteLine(ex.InnerException.ToString());
-			throw;
-		}
+		app = new Application();
+		pkg = app.LoadPackage(pkgLocation, eventListener);
+		pkgResults = pkg.Execute(null, null, eventListener, null, null);
+		Console.WriteLine(pkgResults.ToString());
+		Console.WriteLine("Completed");
 	}
 }
