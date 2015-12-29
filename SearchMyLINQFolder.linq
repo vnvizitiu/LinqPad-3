@@ -10,7 +10,7 @@ class QueryContents
 		try
 		{
 			Console.WriteLine("trying");
-			string startFolder = @"C:\Windows\System32\";
+			string startFolder = @"C:\Users\samtran\OneDrive\Documents\LinqPad_Queries\C#\";
 
 			// Take a snapshot of the file system.
 			System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(startFolder);
@@ -19,7 +19,7 @@ class QueryContents
 			// for all folders under the specified path.
 			IEnumerable<System.IO.FileInfo> fileList = dir.GetFiles("*.*", System.IO.SearchOption.AllDirectories);
 
-			string searchTerm = @"case";
+			string searchTerm = @"zip";
 
 			// Search the contents of each file. 
 			// A regular expression created with the RegEx class 
@@ -27,7 +27,7 @@ class QueryContents
 			// queryMatchingFiles is an IEnumerable<string>. 
 			var queryMatchingFiles =
 				from file in fileList
-				where file.Extension == "Msjet40.dll"
+				where file.Extension == ".linq"
 				let fileText = GetFileText(file.FullName)
 				where fileText.Contains(searchTerm)
 				select file.FullName;

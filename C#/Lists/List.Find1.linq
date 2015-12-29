@@ -1,4 +1,11 @@
 <Query Kind="Program">
+  <Reference>&lt;RuntimeDirectory&gt;\System.Activities.dll</Reference>
+  <Reference>&lt;RuntimeDirectory&gt;\System.Xaml.dll</Reference>
+  <Reference>&lt;RuntimeDirectory&gt;\System.Runtime.Serialization.dll</Reference>
+  <Reference>&lt;RuntimeDirectory&gt;\System.ServiceModel.Internals.dll</Reference>
+  <Reference>&lt;RuntimeDirectory&gt;\System.Runtime.DurableInstancing.dll</Reference>
+  <Reference>&lt;RuntimeDirectory&gt;\Microsoft.VisualBasic.Activities.Compiler.dll</Reference>
+  <Reference>&lt;RuntimeDirectory&gt;\Microsoft.VisualBasic.dll</Reference>
   <Namespace>System</Namespace>
   <Namespace>System.Collections.Generic</Namespace>
 </Query>
@@ -90,5 +97,24 @@ public class Example
 
         Exists: Part with Id=1444: True 
          */
-    } 
+		 Console.WriteLine("Lamda begings.....................................................................");
+		 Action<Part> print= part=>Console.WriteLine("PartName={0}, ID={1}",part.PartName, part.PartId);
+		 parts.ForEach(print);
+		
+	   Console.WriteLine("Lamda end.");
+
+
+		Console.WriteLine("Oldies");
+		 parts.FindAll(film => film.PartId < 1400)
+			.ForEach(print);
+			
+		Console.WriteLine();
+
+
+
+		Console.WriteLine("Sorted");
+		parts.Sort((f1, f2) => f1.PartName.CompareTo(f2.PartName));
+		parts.ForEach(print);
+
+	}
 }
