@@ -8,13 +8,13 @@ void Main() //http://blogs.msdn.com/b/csharpfaq/archive/2009/03/25/how-to-use-li
   new Book { Title="LINQ for Fun", Cost =12, Publisher="Raymondx" },
   new Book { Title="Extreme LINQ", Cost=1 , Publisher="Krystal"}};
 
-	List <nBook> nBooks = new List<nBook>() {
+	List<nBook> nBooks = new List<nBook>() {
   new nBook { Title="LINQ in Action", Cost=10, Publisher="Sam" },
   new nBook { Title="LINQ for Fun", Cost =12, Publisher="Raymond" },
   new nBook { Title="Extreme LINQ", Cost=1 , Publisher="Krystal"}};
-  
- 
- 
+
+
+
 
 
 	var distinctPublisher = Books.Distinct();
@@ -90,7 +90,3 @@ public class Book : IEquatable<Book>
 		return hashDigital ^ hashDigital;
 	}
 }
-
-
-
-

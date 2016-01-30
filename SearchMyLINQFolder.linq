@@ -19,7 +19,7 @@ class QueryContents
 			// for all folders under the specified path.
 			IEnumerable<System.IO.FileInfo> fileList = dir.GetFiles("*.*", System.IO.SearchOption.AllDirectories);
 
-			string searchTerm = @"zip";
+			string searchTerm = @"odata";
 
 			// Search the contents of each file. 
 			// A regular expression created with the RegEx class 

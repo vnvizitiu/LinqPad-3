@@ -1,0 +1,4 @@
+au\samtran, admin
+au\raymond, user
+au\samtran_adm,admin
+DESKTOP-E80R7DQ\samtran,admin
