@@ -22,7 +22,7 @@
 
         {  
 
-            client.BaseAddress = new Uri("http://localhost:51925/");    
+            client.BaseAddress = new Uri("http://bida.azurewebsites.net//");    
 
             ListAllBooks();  
 
