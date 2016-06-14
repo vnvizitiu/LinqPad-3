@@ -1,0 +1,20 @@
+<?xml version="1.0"?>               
+<games xmlns = "http://serialize">
+    <game>
+        <name>TEST1</name>
+        <code>TESTGAME1</code>
+        <ugn>1111111</ugn>
+        <bets>
+            <bet>5,00</bet>
+        </bets>
+    </game>
+    <game>
+        <name>TEST2</name>
+        <code>TESTGAME2</code>
+        <ugn>222222</ugn>
+        <bets>
+            <bet>0,30</bet>
+            <bet>0,90</bet>
+        </bets>
+    </game>
+</games>

@@ -1,0 +1,6 @@
+<tsResponse xmlns="http://tableau.com/api" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tableau.com/api http://tableau.com/api/ts-api-2.2.xsd">
+  <pagination pageNumber="1" pageSize="100" totalAvailable="383" />
+  <users>
+    <user id="69029d34-96ee-461d-9b86-9436ec0d44ad" name="abbottti" siteRole="Interactor" lastLogin="2015-08-29T04:15:21Z" externalAuthUserId="" />
+   </users>
+</tsResponse>

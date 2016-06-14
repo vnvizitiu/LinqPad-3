@@ -1,0 +1,22 @@
+<book xmlns="http://archive.org/scribe/xml"&gt; 
+<bookData> 
+   <bookId>systematikundfau19textgies</bookId> 
+   <leafCount>858</leafCount> 
+</bookData> 
+<pageData> 
+   <page leafNum="1"> 
+     <addToAccessFormats>true</addToAccessFormats> 
+     <cropBox> 
+       <w>2724.0</w> 
+       <h>3768.0</h> 
+     </cropBox> 
+   </page> 
+   <page leafNum="2"> 
+     <addToAccessFormats>true</addToAccessFormats> 
+     <cropBox> 
+       <w>2608.0</w> 
+       <h>3494.0</h> 
+     </cropBox> 
+   </page> 
+</pageData> 
+</book>

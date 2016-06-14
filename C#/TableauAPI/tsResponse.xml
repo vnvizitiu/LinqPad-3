@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tsResponse xmlns="http://tableau.com/api">
+  <pagination pageNumber="1" pageSize="0" totalAvailable="0" />
+  <datasources>
+    <datasource id="id1" name="name1" contentUrl="contentUrl1" description="description1" type="type1" createdAt="1900-01-01T01:01:01+11:00" updatedAt="1900-01-01T01:01:01+11:00">
+      <connectionCredentials name="name1" password="password1" embed="true" oAuth="true" />
+      <site id="id1" name="name1" contentUrl="contentUrl1" adminMode="ContentOnly" userQuota="-1" storageQuota="-1" disableSubscriptions="true" state="Active">
+        <usage numUsers="0" storage="0" />
+      </site>
+      <project id="id1" name="name1" description="description1" contentPermissions="LockedToProject">
+        <owner id="id1" name="name1" fullName="fullName1" email="email1" password="password1" siteRole="Guest" authSetting="ServerDefault" lastLogin="1900-01-01T01:01:01+11:00" externalAuthUserId="externalAuthUserId1">
+          <domain name="name1" />
+        </owner>
+      </project>
+      <owner id="id1" name="name1" fullName="fullName1" email="email1" password="password1" siteRole="Guest" authSetting="ServerDefault" lastLogin="1900-01-01T01:01:01+11:00" externalAuthUserId="externalAuthUserId1">
+        <domain name="name2" />
+      </owner>
+      <tags>
+        <tag label="label1" />
+        <tag label="label2" />
+        <tag label="label3" />
+      </tags>
+    </datasource>
+    <datasource id="id2" name="name2" contentUrl="contentUrl2" description="description2" type="type2" createdAt="0001-01-01T00:00:00+11:00" updatedAt="0001-01-01T00:00:00+11:00">
+      <connectionCredentials name="name2" password="password2" embed="false" oAuth="false" />
+      <site id="id2" name="name2" contentUrl="contentUrl2" adminMode="ContentAndUsers" userQuota="79228162514264337593543950335" storageQuota="79228162514264337593543950335" disableSubscriptions="false" state="Suspended">
+        <usage numUsers="79228162514264337593543950335" storage="79228162514264337593543950335" />
+      </site>
+      <project id="id2" name="name2" description="description2" contentPermissions="ManagedByOwner">
+        <owner id="id2" name="name2" fullName="fullName2" email="email2" password="password2" siteRole="Interactor" authSetting="SAML" lastLogin="0001-01-01T00:00:00+11:00" externalAuthUserId="externalAuthUserId2">
+          <domain name="name3" />
+        </owner>
+      </project>
+      <owner id="id2" name="name2" fullName="fullName2" email="email2" password="password2" siteRole="Interactor" authSetting="SAML" lastLogin="0001-01-01T00:00:00+11:00" externalAuthUserId="externalAuthUserId2">
+        <domain name="name4" />
+      </owner>
+      <tags>
+        <tag label="label4" />
+        <tag label="label5" />
+        <tag label="label6" />
+      </tags>
+    </datasource>
+    <datasource id="id3" name="name3" contentUrl="contentUrl3" description="description3" type="type3" createdAt="9999-12-31T23:59:59.9999999+11:00" updatedAt="9999-12-31T23:59:59.9999999+11:00">
+      <connectionCredentials name="name3" password="password3" embed="true" oAuth="true" />
+      <site id="id3" name="name3" contentUrl="contentUrl3" adminMode="ContentOnly" userQuota="0" storageQuota="0" disableSubscriptions="true" state="Active">
+        <usage numUsers="1" storage="1" />
+      </site>
+      <project id="id3" name="name3" description="description3" contentPermissions="LockedToProject">
+        <owner id="id3" name="name3" fullName="fullName3" email="email3" password="password3" siteRole="Publisher" authSetting="ServerDefault" lastLogin="9999-12-31T23:59:59.9999999+11:00" externalAuthUserId="externalAuthUserId3">
+          <domain name="name5" />
+        </owner>
+      </project>
+      <owner id="id3" name="name3" fullName="fullName3" email="email3" password="password3" siteRole="Publisher" authSetting="ServerDefault" lastLogin="9999-12-31T23:59:59.9999999+11:00" externalAuthUserId="externalAuthUserId3">
+        <domain name="name6" />
+      </owner>
+      <tags>
+        <tag label="label7" />
+        <tag label="label8" />
+        <tag label="label9" />
+      </tags>
+    </datasource>
+  </datasources>
+</tsResponse>

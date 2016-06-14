@@ -1,0 +1,16 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://purl.org/rss/1.0/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:mp="http://www.tagesschau.de/rss/1.0/modules/metaplus/"
+         xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+  <channel>
+    <title>title</title>
+    <description>Default description</description>
+    <dc:date>2013-04-15 13:27:06</dc:date>
+    <sy:updateBase>2013-04-15 13:27:06</sy:updateBase>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>12</sy:updateFrequency>
+  </channel>
+</rdf:RDF>

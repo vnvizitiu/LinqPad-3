@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<tsResponse xsi:schemaLocation="http://tableausoftware.com/api http://tableausoftware.com/api/ts-api-2.0.1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://tableausoftware.com/api">
+
+<pagination totalAvailable="15" pageSize="1000" pageNumber="1"/>
+
+
+-<projects>
+
+<project description="Try to avoid publishing to this Default project. The default project that was automatically created by Tableau." name="default" id="8ecf5fac-77a6-11e4-a113-375ac33013f6"/>
+
+<project description="Wealth Management Finance Insurance Reporting" name="Insurance Reporting" id="8ecf5fac-77a6-11e4-b801-e79b8bfdc4cf"/>
+
+<project description="Wealth Management Finance Investment Reporting" name="Investment Reporting" id="8ecf5fac-77a6-11e4-a94a-8f5342b328b6"/>
+
+<project description="Project owner: Stephen Edwards" name="CommInsure Actuarial" id="5d1a0e71-a67c-48e3-a6c1-65bb8a294db2"/>
+
+<project description="BI&DA" name="BI&DA" id="f64de345-d878-4e15-9ef8-985d4f22f51c"/>
+
+<project description="BI&DA Sandpit" name="BI&DA Sandpit" id="f905ef0f-0fba-42ec-9fd5-e65f542c3fed"/>
+
+<project description="CommInsure Actuarial Sandpit" name="CommInsure Actuarial Sandpit" id="b2cc745b-fb75-46aa-85b3-84351383a720"/>
+
+<project description="Insurance Reporting Sandpit" name="Insurance Reporting Sandpit" id="9304d69e-c91c-4824-8e0f-593fca375d35"/>
+
+<project description="Investment Reporting Sandpit" name="Investment Reporting Sandpit" id="b079b60e-95d1-408b-adaa-8386aaf81de9"/>
+
+<project description="CI Expense Reporting" name="CI Expense Reporting" id="6823aa03-2842-43ca-be2a-a94e0faedcff"/>
+
+<project description="" name="WMCF Sandpit" id="ac372035-e2cf-4b53-9beb-79daaaf1cce8"/>
+
+<project description="" name="CI Expense Reporting Sandpit" id="032c6096-727b-4df8-beb1-2e7c4dcd0126"/>
+
+<project description="" name="CFS Reporting" id="dffca844-2052-41d2-a6ac-3d5f142ecdfa"/>
+
+<project description="" name="WMCF" id="e06a6c36-07d0-4d17-9ef7-a12ded9e0224"/>
+
+<project description="" name="WM Strategy" id="c0ba4da9-fd90-427e-9334-ba969e41d78e"/>
+
+</projects>
+
+</tsResponse>
